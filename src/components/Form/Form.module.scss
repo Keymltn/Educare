@@ -1,0 +1,384 @@
+@import '../../variables';
+
+.form_container {
+  max-width: 1080px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+form {
+  max-width: 1080px;
+  height: 140px;
+  background-color: $primary-yellowish;
+  padding: 38px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    background-color: $primary-brown-lighter;
+    padding: 17px 98px 16px 99px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+
+    color: $primary-white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  button:hover{
+    border-radius: 10px;
+  }
+}
+
+.form_input-name {
+  max-width: 300px;
+  background-color: $primary-white;
+  outline: none;
+  border: none;
+  padding: 20px 94px 20px 94px;
+  margin-right: 45px;
+
+  color: rgba(0, 0, 0, 0.50);
+  font-family: 'Poppins' sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: .5s;
+}
+
+.form_input-name:hover{
+  border-radius: 10px;
+}
+
+.form_input-email {
+  max-width: 300px;
+  background-color: $primary-white;
+  outline: none;
+  border: none;
+  padding: 17px 51px 16px 51px;
+  margin-right: 45px;
+  color: rgba(0, 0, 0, 0.50);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: .5s;
+}
+
+.form_input-email:hover{
+  border-radius: 10px;
+}
+
+// MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA
+
+@media only screen and (max-width: 1101px) {
+  .form_container {
+    padding: 0 20px;
+  }
+
+  form {
+    padding: 38px 25px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .form_input-name {
+    margin-right: 4%;
+  }
+
+  .form_input-email {
+    margin-right: 4%;
+  }
+
+  .form_container{
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .form_input-name {
+    margin-right: 3%;
+  }
+
+  .form_input-email {
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .form_input-name {
+    margin: 0;
+    max-width: 255px;
+    padding: 20px 66px 20px 72px;
+  }
+
+  .form_input-email {
+    margin: 0;
+    max-width: 277px;
+    padding: 17px 39px 16px 40px;
+  }
+
+  form {
+    button {
+      padding: 17px 83px 16px 87px;
+    }
+  }
+}
+
+@media only screen and (max-width: 914px) {
+  .form_input-name {
+    max-width: 224px;
+    padding: 20px 24px 20px 57px;
+  }
+
+  .form_input-email {
+    max-width: 249px;
+    padding: 17px 9px 16px 28px;
+  }
+
+  form {
+    button {
+      padding: 17px 59px 16px 73px;
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .form_input-name {
+    max-width: 224px;
+    padding: 20px 24px 20px 57px;
+    font-size: 20px;
+  }
+
+  .form_input-email {
+    max-width: 249px;
+    padding: 17px 9px 16px 28px;
+    font-size: 20px;
+  }
+
+  form {
+    button {
+      padding: 17px 59px 16px 73px;
+    }
+  }
+
+  .form_container {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 808px) {
+  .form_input-name {
+    max-width: 187px;
+    padding: 17px 24px 20px 45px;
+    font-size: 19px;
+  }
+
+  .form_input-email {
+    max-width: 231px;
+    padding: 17px 9px 16px 24px;
+    font-size: 19px;
+  }
+
+  form {
+    button {
+      padding: 15px 48px 14px 48px;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .form_input-name {
+    max-width: 166px;
+    padding: 17px 14px 20px 34px;
+    font-size: 19px;
+  }
+
+  .form_input-email {
+    max-width: 212px;
+    padding: 17px 9px 16px 16px;
+    font-size: 18px;
+  }
+
+  form {
+    height: 111px;
+    button {
+      padding: 15px 30px 14px 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .form_input-name {
+    max-width: 133px;
+    padding: 15px 14px 20px 18px;
+    font-size: 19px;
+  }
+
+  .form_input-email {
+    max-width: 200px;
+    padding: 17px 9px 16px 15px;
+    font-size: 17px;
+  }
+
+  form {
+    button {
+      padding: 12px 11px 14px 11px;
+    }
+  }
+}
+
+@media only screen and (max-width: 565px) { 
+  .form_input-name {
+    max-width: 103px;
+    padding: 15px 8px 19px 10px;
+    font-size: 16px;
+  }
+
+  .form_input-email {
+    max-width: 173px;
+    padding: 15px 5px 14px 7px;
+    font-size: 16px;
+  }
+
+  form {
+    button {
+      font-size: 18px;
+      padding: 11px 7px 14px 7px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form_input-name {
+    max-width: 88px;
+    padding: 14px 8px 14px 10px;
+    font-size: 13px;
+  }
+
+  .form_input-email {
+    max-width: 144px;
+    padding: 12px 5px 11px 7px;
+    font-size: 13px;
+  }
+
+  form {
+    height: 77px;
+    button {
+      font-size: 15px;
+      padding: 8px 7px 10px 7px;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  form{
+    height: 280px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    button {
+      padding: 15px 105px 15px 110px;
+      font-size: 23px;
+    }
+  } 
+
+  .form_input-name {
+    max-width: 334px;
+    text-indent: 30%;
+    padding: 15px 20px 15px 20px;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .form_input-email {
+    max-width: 340px;
+    text-indent: 13%;
+    padding: 15px 10px 15px 10px;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  form{
+    height: 280px;
+    button {
+      padding: 15px 86px 15px 86px;
+      font-size: 23px;
+    }
+  } 
+
+  .form_input-name {
+    max-width: 290px;
+    text-indent: 28%;
+    padding: 15px 20px 15px 20px;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .form_input-email {
+    max-width: 290px;
+    text-indent: 11%;
+    padding: 15px 10px 15px 10px;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  form{
+    height: 260px;
+    padding: 28px 25px;
+    button {
+      padding: 15px 61px 15px 61px;
+    }
+  } 
+
+  .form_input-name {
+    max-width: 242px;
+    text-indent: 23%;
+    padding: 15px 20px 15px 20px;
+    font-size: 23px;
+  }
+
+  .form_input-email {
+    max-width: 242px;
+    text-indent: 2%;
+    padding: 15px 10px 15px 10px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  form{
+    height: 230px;
+    padding: 26px 25px;
+    button {
+      padding: 15px 46px 15px 44px;
+    }
+  } 
+
+  .form_input-name {
+    max-width: 210px;
+    text-indent: 17%;
+    padding: 10px 20px 11px 20px;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .form_input-email {
+    max-width: 209px;
+    text-indent: 2%;
+    padding: 10px 8px 10px 10px;
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+}
