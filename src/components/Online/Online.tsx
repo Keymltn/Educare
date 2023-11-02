@@ -1,4 +1,3 @@
-import React from "react";
 import m from "./Online.module.scss";
 import womenlearning from "../../assets/learningwoman.png";
 

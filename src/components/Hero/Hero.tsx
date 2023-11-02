@@ -1,4 +1,3 @@
-import React from "react";
 import m from "./Hero.module.scss";
 import learningmen from "../../assets/learningprocess.svg";
 

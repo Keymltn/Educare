@@ -1,4 +1,3 @@
-import React from "react";
 import m from "./Form.module.scss";
 
 const Form = () => {

@@ -1,9 +1,7 @@
-import React from "react";
 import { useState } from "react";
 import m from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import { FiChevronDown } from "react-icons/fi";
-import { FiChevronUp } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 

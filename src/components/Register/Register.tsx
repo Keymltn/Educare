@@ -1,4 +1,3 @@
-import React from "react";
 import m from "./Register.module.scss";
 import thinkingwomen from "../../assets/thinkingwoman.jpg";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import m from "./Community.module.scss";
 
 const Community = () => {

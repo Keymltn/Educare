@@ -1,5 +1,3 @@
-import React from "react";
-// import { Link } from "react-router-dom";
 import m from "./Footer.module.scss";
 import copyright from "../../assets/copyright.svg";
 import logo from "../../assets/logo.svg";
