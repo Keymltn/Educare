@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg";
 import { FiChevronDown } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
@@ -14,25 +15,17 @@ const Header = () => {
         <div className={m.header_container}>
           <div className={m.header_wrapper}>
             <div className={m.header_logo}>
-              <img src={logo} alt="Educare logo" />
+              <Link to="/">
+                <img src={logo} alt="Educare logo" />
+              </Link>
             </div>
             <div className={m["header_pages-bar"]}>
               <ul>
                 <li className={m.header_page}>
-                  <a
-                    href="https://www.google.com/search?q=Home&sca_esv=577090324&sxsrf=AM9HkKnsZpR0RYLAli3UesS3exLsf6LDJQ%3A1698391756700&source=hp&ei=zGY7Zcu1KJWuwPAP4sen2Aw&iflsig=AO6bgOgAAAAAZTt03NCUQsiC7yBZxo9uDRmuTcbxAd73&ved=0ahUKEwjLy-Gq2pWCAxUVFxAIHeLjCcsQ4dUDCAo&uact=5&oq=Home&gs_lp=Egdnd3Mtd2l6IgRIb21lMg0QLhiKBRjHARjRAxhDMgcQABiKBRhDMgsQLhiABBixAxiDATIOEC4YrwEYxwEYsQMYgAQyBxAAGIoFGEMyBRAAGIAEMg4QLhiABBixAxiDARjUAjIFEAAYgAQyBRAAGIAEMgUQABiABEjTVVDgBliLGnAFeACQAQCYAZ0BoAG5BqoBAzAuNrgBA8gBAPgBAagCCsICBxAjGOoCGCfCAgQQIxgnwgIHECMYigUYJ8ICCBAAGIAEGLEDwgILEAAYigUYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICCxAAGIAEGLEDGIMBwgILEC4YgAQYxwEY0QPCAg0QLhiABBixAxiDARgKwgIQEC4YrwEYxwEYsQMYgAQYCsICBxAAGIAEGArCAhAQLhiABBixAxiDARjUAhgKwgIHEC4YgAQYCsICCxAuGIoFGLEDGIMBwgIOEC4YgAQYsQMYxwEYrwE&sclient=gws-wiz"
-                    target="_blank"
-                  >
-                    Home
-                  </a>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li className={m.header_page}>
-                  <a
-                    href="https://www.google.com/search?q=about&sca_esv=577090324&tbm=isch&sxsrf=AM9HkKnwibLdbQT1GIHWdyOTE3jaR5oWag:1698391809775&source=lnms&sa=X&ved=2ahUKEwi6_orE2pWCAxUYEhAIHcTUAdAQ_AUoAXoECAMQAw&biw=1536&bih=747&dpr=1.25"
-                    target="_blank"
-                  >
-                    About
-                  </a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li className={m.header_page}>
                   <a

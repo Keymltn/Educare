@@ -1,22 +1,20 @@
 import "./App.css";
-import Community from "./components/Community/Community";
-import Footer from "./components/Footer/Footer";
-import Form from "./components/Form/Form";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Online from "./components/Online/Online";
-import Register from "./components/Register/Register";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Online />
-      <Register />
-      <Form />
-      <Community />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<h1>Not found</h1>} />
+      </Routes>
     </>
   );
 }
